@@ -17,7 +17,9 @@ spring:
   jpa:
     hibernate:
       # 이것도 dev와 prod를 나눠가져가도 된다
+#      ddl-auto: create-drop # 실무에서 잘못 쓰면 큰일남. 그냥 머리에서 지우자!!
       ddl-auto: update # 개발 환경에서는 create-drop, 운영 환경에서는 validate 권장
+      # 최초 세팅에만 updat를 쓰고, 그 이휴에는 none만 쓰기도 함
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
