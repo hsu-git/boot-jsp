@@ -12,6 +12,7 @@ import java.util.List;
 
 @Controller
 public class MainController {
+
     private final RealEstateRepository realEstateRepository;
 
     public MainController(RealEstateRepository realEstateRepository) {
